@@ -1,0 +1,10 @@
+#main{
+    height: 100vh;
+}
+.imgBg{
+    display: flex;
+}
+.img    {
+    width: 50vw;
+    height: 100vh;
+}

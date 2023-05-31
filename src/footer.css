@@ -1,0 +1,40 @@
+.rowfooter{
+    display:flex;
+    justify-content: space-between;
+    margin: 0 80px;
+    padding:20px 0;
+
+}
+.titreFooter{
+    font-size: 14px;
+    text-align: start ;
+    font-weight: 200;
+}
+.containFooter ul{
+    padding-inline-start: 0;
+}
+.containFooter{
+    font-size: 13px;
+    font-weight: 100;
+
+}
+.containFooter a{
+color: #CDCDCD;
+}
+.containFooter a:hover{
+    color:#ACACAC ;
+
+}
+.colon{
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.informationTVA{
+    padding: 10px 56px;
+    font-size: 13px;
+    font-weight: 100;
+}
+
