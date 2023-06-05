@@ -8,3 +8,115 @@
     width: 50vw;
     height: 100vh;
 }
+.rowCard{
+  flex-wrap:wrap;  /*automatiquement quand il atteint 4 photos il revient a la ligne voir ligne 89 avec nt child */
+  padding:25px 75px;
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  row-gap: 20px;
+}
+
+
+
+
+.card {
+  position: relative;
+  width: 17.875em;
+  height: 17.5em;
+  box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: all 120ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #242424;
+  padding: 0.5em;
+  padding-bottom: 3.4em;
+  border-radius: 0 0 35px 35px;
+}
+
+.card::after {
+  content: "Add to Cart";
+  padding-top: 1.25em;
+  padding-left: 1.25em;
+  position: absolute;
+  left: 0;
+  bottom: -60px;
+  background: rgb(230, 230, 230);
+  color: black;
+  height: 2.5em;
+  width: 94%;
+  transition: all 80ms;
+  font-weight: 600;
+  text-transform: uppercase;
+  opacity: 0;
+  border-radius: 0 0 35px 35px;
+
+}
+
+.card .title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  position: absolute;
+  left: 1.625em;
+  bottom: 1.875em;
+  font-weight: 400;
+  color: rgb(230, 230, 230);
+}
+
+.card .price {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 0.9em;
+  position: absolute;
+  left: 1.625em;
+  bottom: 0.625em;
+  color: rgb(230, 230, 230);
+}
+
+.card:hover::after {
+  bottom: 0;
+  opacity: 1;
+}
+
+.card:active {
+  transform: scale(0.98);
+}
+
+.card:active::after {
+  content: "Added !";
+  height: 3.125em;
+}
+.card:nth-child(4n+1) {
+  margin-right: 0;
+}
+
+.text {
+  max-width: 55px;
+}
+
+.image {
+  background: rgb(241, 241, 241);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+
+
+
+.newsCasio{
+  display: grid;
+  place-items: center;
+  padding: 45px 0;
+}
+.newsCasioTitre{
+  font-family: 'microgramma-bold', sans-serif;
+  font-size: 25px;
+  font-weight: 600;
+
+}
+.newsCasioTexte{
+  color :rgb(241, 241, 241);
+}
