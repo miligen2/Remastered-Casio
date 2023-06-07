@@ -5,6 +5,7 @@ import Alert from "./compenent/alert"
 import Footer from "./footer"
 import imgMain2 from "/Montre-deux.jpeg"
 import Card from "./pages/card"
+import Form from "./pages/form"
 import { casioproduct } from "./data/product"
 import { BrowserRouter as Router, Route , Routes} from 'react-router-dom'
 
@@ -85,8 +86,12 @@ function App() {
                             <span className="price">$100</span>
                         </div> */}
 
+
+                        
+
                     </div>
                 </section>
+                <Form />
             </main>
             <Footer />
         </>

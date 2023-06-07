@@ -35,7 +35,6 @@
   padding-bottom: 3.4em;
   border-radius: 0 0 35px 35px;
 }
-
 .card::after {
   content: "Add to Cart";
   padding-top: 1.25em;
@@ -52,9 +51,7 @@
   text-transform: uppercase;
   opacity: 0;
   border-radius: 0 0 35px 35px;
-
 }
-
 .card .title {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 0.9em;
@@ -64,7 +61,6 @@
   font-weight: 400;
   color: rgb(230, 230, 230);
 }
-
 .card .price {
   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
   font-size: 0.9em;
@@ -73,16 +69,13 @@
   bottom: 0.625em;
   color: rgb(230, 230, 230);
 }
-
 .card:hover::after {
   bottom: 0;
   opacity: 1;
 }
-
 .card:active {
   transform: scale(0.98);
 }
-
 .card:active::after {
   content: "Added !";
   height: 3.125em;
@@ -90,11 +83,9 @@
 .card:nth-child(4n+1) {
   margin-right: 0;
 }
-
 .text {
   max-width: 55px;
 }
-
 .image {
   background: rgb(241, 241, 241);
   width: 100%;
@@ -102,10 +93,6 @@
   display: grid;
   place-items: center;
 }
-
-
-
-
 .newsCasio{
   display: grid;
   place-items: center;

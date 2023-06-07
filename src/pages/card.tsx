@@ -16,7 +16,4 @@ export default function Card ({id, name, price}:Props) {
             <span className="price">${price}</span>
         </div>
     )
-
-
 }
-
