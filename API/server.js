@@ -2,12 +2,18 @@ const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const productRoutes = require('./Routes/product');
+const { getProducts,deletProduct,updateProduct,createProduct} = require('./controller/product');
+
 
 const app = express();
 
 // Middleware pour analyser le contenu du corps des requêtes
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+
+
+
+
 
 // Connexion à la base de données
 mongoose.connect('mongodb+srv://angelo:a@casio.xgnv6ac.mongodb.net/', {
@@ -17,12 +23,20 @@ mongoose.connect('mongodb+srv://angelo:a@casio.xgnv6ac.mongodb.net/', {
   .then(() => {
     console.log('Connexion à la base de données établie');
 
-    // Routes pour gérer les produits
-    app.use('/api', productRoutes);
 
-    app.get('/api/data', (req, res) => {
- 
-      });
+
+
+
+// Routes pour gérer les produits
+app.use('/api', productRoutes);
+
+app.use('/api/home', (req, res,next) => {
+  getProducts();
+
+  });
+
+
+      
 
     app.listen(3000, () => {
       console.log('Serveur en écoute sur le port 3000');
